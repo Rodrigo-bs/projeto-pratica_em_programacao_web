@@ -1,0 +1,15 @@
+{
+    "name": "rodri/projeto-pratica_em_programacao_web",
+    "autoload": {
+        "psr-4": {
+            "Rodri\\ProjetoPraticaEmProgramacaoWeb\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rodrigo da Silva",
+            "email": "74737267+Rodrigo-bs@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}
