@@ -1,4 +1,4 @@
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /projeto_webacademy-sistema-de-checkin-MVC/index.php?url=$1 [QSA,L]
+RewriteRule ^(.*)$ /projeto-pratica_em_programacao_web/index.php?url=$1 [QSA,L]
