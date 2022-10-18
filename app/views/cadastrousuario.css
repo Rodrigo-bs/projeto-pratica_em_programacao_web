@@ -14,7 +14,8 @@ div#loginexistente{
 }
 
 body{
-    background-image: linear-gradient(#8c8c8c, #e6e6e6);
+    background: rgb(136,92,179);
+    background: linear-gradient(0deg, rgba(136,92,179,1) 0%, rgba(103,67,142,1) 55%);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100vw;
