@@ -17,7 +17,6 @@ h1, label{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* border: 1px solid #111; */
     max-width: 800px;
     background-color: white;
 
@@ -34,6 +33,10 @@ input{
     border: none;
     outline: none;
     border-bottom: 2px solid #727272;
+}
+
+label{
+    /* left: 25px; */
 }
 
 label, .icon{
@@ -76,4 +79,5 @@ p{
     color: white;
     padding: 5px;
     width: 200px;
+    font-size: 15px;
 }
