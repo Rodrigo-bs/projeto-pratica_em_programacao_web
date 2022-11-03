@@ -10,8 +10,10 @@ body{
     background-color: #F5F5F5;
 }
 
-h1, label{
+h1{
+    margin: 0px;
     color: #727272;
+    margin-bottom: 40px;
 }
 
 .container{
@@ -28,7 +30,6 @@ input, label, button{
 }
 
 input{
-    padding: 5px;
     font-size: 18px;
     border: none;
     outline: none;
@@ -36,7 +37,8 @@ input{
 }
 
 label{
-    /* left: 25px; */
+    color: #727272;
+    left: 30px;
 }
 
 label, .icon{
@@ -70,6 +72,11 @@ p{
 
 .input-button{
     position: relative;
+    margin-bottom: 30px;
+}
+
+form{
+    padding: 30px 50px;
 }
 
 #enviar{
@@ -77,7 +84,7 @@ p{
     outline: none;
     background-color: #34C76F;
     color: white;
-    padding: 5px;
+    padding: 10px;
     width: 200px;
     font-size: 15px;
 }
