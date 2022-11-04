@@ -15,6 +15,7 @@ h1{
     color: #727272;
     margin-bottom: 40px;
 }
+  
 
 .container{
     display: grid;
@@ -24,12 +25,13 @@ h1{
 
 }
 
-input, label, button{
-    display: block;
-    font-weight: bold;
+.input-button{
+    position: relative;
+    margin-bottom: 30px;
 }
 
 input{
+    display: block;
     font-size: 18px;
     border: none;
     outline: none;
@@ -37,11 +39,16 @@ input{
 }
 
 label{
+    display: block;
     color: #727272;
     left: 30px;
+    position: absolute;
+    font-weight: bold;
+    transition: 0.5 ease-in-out;
+    top: 0px;
 }
 
-label, .icon{
+.icon{
     position: absolute;
 }
 
@@ -50,7 +57,7 @@ a{
     color: #34C76F;
 }
 
-.imagem{
+.grid-imagem{
     position: relative;
 }
 
@@ -70,16 +77,12 @@ p{
     object-fit: cover;
 }
 
-.input-button{
-    position: relative;
-    margin-bottom: 30px;
-}
-
 form{
     padding: 30px 50px;
 }
 
 #enviar{
+    display: block;
     border: none;
     outline: none;
     background-color: #34C76F;
@@ -88,8 +91,13 @@ form{
     width: 200px;
     font-size: 15px;
     margin: 25px;
+    font-weight: bold;
 }
 
 #sem-cadastro{
     margin: 20px;
+}
+
+#icon-senha{
+    top: -6px;
 }
