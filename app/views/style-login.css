@@ -87,4 +87,9 @@ form{
     padding: 10px;
     width: 200px;
     font-size: 15px;
+    margin: 25px;
+}
+
+#sem-cadastro{
+    margin: 20px;
 }
