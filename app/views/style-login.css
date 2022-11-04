@@ -36,6 +36,7 @@ input{
     border: none;
     outline: none;
     border-bottom: 2px solid #727272;
+    width: 80%;
 }
 
 label{
@@ -95,7 +96,7 @@ form{
 }
 
 #sem-cadastro{
-    margin: 20px;
+    margin: 15px;
 }
 
 #icon-senha{
