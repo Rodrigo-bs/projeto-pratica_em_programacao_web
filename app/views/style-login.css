@@ -37,7 +37,7 @@ input{
     border: none;
     outline: none;
     border-bottom: 2px solid #727272;
-    width: 80%;
+    width: 100%;
 }
 
 label{
@@ -47,12 +47,12 @@ label{
     position: absolute;
     font-weight: bold;
     transition: 0.5 ease-in-out;
-    top: 0px;
+    bottom: 2px;
 }
 
 .icon{
     position: absolute;
-    bottom: 4px;
+    bottom: 6px;
 }
 
 a{
@@ -66,12 +66,13 @@ a{
 
 p{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-weight: bold;
-    /* font-size: 30px; */
+    font-size: 30px;
+    text-align: left;
 }
 
 #img-fundo{
@@ -93,11 +94,12 @@ form{
     padding: 10px;
     width: 200px;
     font-size: 15px;
-    margin: 25px;
+    margin: 25px 45px;
     font-weight: bold;
 }
 
 #sem-cadastro{
-    margin: 15px;
+    font-size: 14px;
+    margin: 50px;
 }
 
