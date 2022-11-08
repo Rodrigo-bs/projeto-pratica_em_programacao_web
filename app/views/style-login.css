@@ -32,7 +32,6 @@ h1::after{
     grid-template-columns: 1fr 1fr;
     max-width: 800px;
     background-color: white;
-
 }
 
 .input-button{
@@ -47,6 +46,8 @@ input{
     outline: none;
     border-bottom: 2px solid #727272;
     width: 100%;
+    z-index: 2;
+
 }
 
 label{
@@ -55,13 +56,16 @@ label{
     left: 30px;
     position: absolute;
     font-weight: bold;
-    transition: 0.5 ease-in-out;
+    transition: 0.3s ease;
     bottom: 2px;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .icon{
     position: absolute;
     bottom: 6px;
+    transition: .3s ease;
 }
 
 a{
@@ -105,9 +109,29 @@ form{
     font-size: 15px;
     margin: 25px 45px;
     font-weight: bold;
+    transition: .3s ease;
+}
+
+#enviar:hover{
+    cursor: pointer;
+    background-color: #25a558;
+    transform: scale(1.05);
+    
 }
 
 #sem-cadastro{
     font-size: 14px;
     margin: 50px;
+}
+input:focus ~ label,
+input:valid ~ label{
+    left: 20px;
+}
+input:focus ~ label,
+input:focus ~ img,
+input:valid ~ label,
+input:valid ~ img{
+    bottom: 22px;
+    transform: scale(.8);
+    transition: .3s ease;
 }
