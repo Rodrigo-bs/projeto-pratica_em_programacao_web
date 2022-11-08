@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', 'sans-serif';
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color: #F5F5F5;
+}
+
+h1{
+    font-size: 30px;
+    margin: 0px;
+    color: #727272;
+    margin-bottom: 50px;
+}
+  
+h1::after{
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: -8px;
+    height: 4px;
+    width: 33px;
+    background-color: #34C76F;
+}
+
+.container{
+    border-radius: 2px;
+    width: 500px;
+    max-width: 500px;
+    background-color: white;
+    padding: 50px;
+}
+
+.input-button{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+input{
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #727272;
+    width: 90%;
+    z-index: 2;
+}
+
+label{
+    position: absolute;
+    display: block;
+    color: #727272;
+    left: 32px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    bottom: 2px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.icon{
+    position: absolute;
+    bottom: 2px;
+    transition: .3s ease;
+}
+
+#enviar{
+    display: block;
+    border: none;
+    outline: none;
+    background-color: #34C76F;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    font-size: 15px;
+    margin: 0px 90px;
+    font-weight: bold;
+    transition: .3s ease;
+}
+
+#enviar:hover{
+    cursor: pointer;
+    background-color: #25a558;
+    transform: scale(1.05);
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    left: 20px;
+}
+input:focus ~ label,
+input:focus ~ img,
+input:valid ~ label,
+input:valid ~ img{
+    bottom: 22px;
+    transform: scale(.8);
+    transition: .3s ease;
+}

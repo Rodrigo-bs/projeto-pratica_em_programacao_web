@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/CSS/style_cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/">
+            <h1>Cadastro</h1>
+            <div class="input-button">
+                <input type="text" name="usuario" maxlength="50" required>
+                <img src="../../assets/img/icon-user.svg" alt="" class="icon">
+                <label for="user">Nome</label>
+            </div>
+
+            <div class="input-button">
+                <input type="email" name="email" maxlength="50" required>
+                <img src="../../assets/img/icon-email.svg" alt="" class="icon">
+                <label for="user">Email</label>
+            </div>
+
+            <div class="input-button">
+                <input type="password" name="senha" maxlength="32" required>
+                <img src="../../assets/img/icon-password.svg" alt="" class="icon" class="icon-pass">
+                <label for="user">Senha</label>
+            </div>
+
+            <div class="input-button">
+                <input type="password" name="senha" maxlength="32" required>
+                <img src="../../assets/img/icon-password.svg" alt="" class="icon" class="icon-pass">
+                <label for="user">Confirme sua senha</label>
+            </div>
+
+            <div class="input-button">
+                <input type="checkbox" name="termo" required>
+                <label for="user">Aceitar termos de serviço</label>
+            </div>
+
+            <button type="submit" id="enviar">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>

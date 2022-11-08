@@ -47,7 +47,6 @@ input{
     border-bottom: 2px solid #727272;
     width: 100%;
     z-index: 2;
-
 }
 
 label{
@@ -116,7 +115,6 @@ form{
     cursor: pointer;
     background-color: #25a558;
     transform: scale(1.05);
-    
 }
 
 #sem-cadastro{
