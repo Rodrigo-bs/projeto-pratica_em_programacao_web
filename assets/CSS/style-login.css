@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 
-
 body{
     font-family: 'Nunito', sans-serif;
     display: grid;
@@ -126,6 +125,7 @@ input:focus ~ label,
 input:valid ~ label{
     left: 22px;
 }
+
 input:focus ~ label,
 input:focus ~ img,
 input:valid ~ label,

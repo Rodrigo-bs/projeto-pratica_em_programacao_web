@@ -109,6 +109,12 @@ input:focus ~ label,
 input:valid ~ label{
     left: 22px;
 }
+
+/* input:focus ~ img,
+input:valid ~ img{
+    left: -5px;
+} */
+
 input:focus ~ label,
 input:focus ~ img,
 input:valid ~ label,
