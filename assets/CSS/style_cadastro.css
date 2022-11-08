@@ -34,7 +34,7 @@ h1::after{
     width: 500px;
     max-width: 500px;
     background-color: white;
-    padding: 50px;
+    padding: 30px 80px 30px 50px;
 }
 
 .input-button{
@@ -47,7 +47,7 @@ input{
     border: none;
     outline: none;
     border-bottom: 2px solid #727272;
-    width: 90%;
+    width: 100%;
     z-index: 2;
 }
 
@@ -76,10 +76,11 @@ label{
     outline: none;
     background-color: #34C76F;
     color: white;
+    border-radius: 3px;
     padding: 10px;
     width: 200px;
     font-size: 15px;
-    margin: 0px 90px;
+    margin: 0px 100px;
     font-weight: bold;
     transition: .3s ease;
 }
@@ -90,9 +91,23 @@ label{
     transform: scale(1.05);
 }
 
+#checkbox{
+    width: 20px;
+    left: 0px;
+    display: inline;
+    margin: 0;
+    padding: 0px;
+}
+
+#termo{
+    margin: 0px;
+    left: 22px;
+    padding: 0px;
+}
+
 input:focus ~ label,
 input:valid ~ label{
-    left: 20px;
+    left: 22px;
 }
 input:focus ~ label,
 input:focus ~ img,

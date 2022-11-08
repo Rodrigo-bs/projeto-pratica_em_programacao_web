@@ -6,7 +6,7 @@ body{
     display: grid;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
     background-color: #F5F5F5;
 }
 
@@ -56,14 +56,14 @@ label{
     position: absolute;
     font-weight: bold;
     transition: 0.3s ease;
-    bottom: 2px;
+    bottom: 1px;
     z-index: 1;
     pointer-events: none;
 }
 
 .icon{
     position: absolute;
-    bottom: 6px;
+    bottom: 3px;
     transition: .3s ease;
 }
 
@@ -103,6 +103,7 @@ form{
     outline: none;
     background-color: #34C76F;
     color: white;
+    border-radius: 3px;
     padding: 10px;
     width: 200px;
     font-size: 15px;
@@ -123,7 +124,7 @@ form{
 }
 input:focus ~ label,
 input:valid ~ label{
-    left: 20px;
+    left: 22px;
 }
 input:focus ~ label,
 input:focus ~ img,
