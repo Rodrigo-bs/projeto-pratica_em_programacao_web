@@ -1,7 +1,6 @@
 <?php
     session_start();
-    
-    include './vendor/autoload.php';
+
     require './config.php';
 
     spl_autoload_register(function($class) {
@@ -13,8 +12,6 @@
             include './app/core/' . $class . '.php';
         }
     });
-
-
 
     $core = new Core();
     $core->start();

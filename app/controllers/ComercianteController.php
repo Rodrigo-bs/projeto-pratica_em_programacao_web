@@ -1,6 +1,6 @@
 <?php
 
-    class ComercianteController extends Comerciante {
+    class comercianteController extends Comerciante {
         public function mostrarTodos() {
             print_r($this->getAll());
         }

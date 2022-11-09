@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/CSS/style-login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="<?=URL?>/assets/css/style-login.css">
+    <title><?=$params['informacoes_da_pagina']['titulo']?></title>
 </head>
 <body>
     <div class="container">
-        <form action="/">
+        <form action="cliente/login">
             <h1>Login</h1>
             <div class="input-button">
                 <input type="text" id="user" maxlength="50" required>
-                <img src="../../assets/img/icon-user.svg" alt="" class="icon">
+                <img src="<?=URL?>/assets/img/icon-user.svg" alt="" class="icon">
                 <label for="user">Usuário</label>
             </div>
 
             <div class="input-button">
                 <input type="password" id="password" maxlength="32" required>
-                <img src="../../assets/img/icon-password.svg" alt="" class="icon" id="icon-senha">
+                <img src="<?=URL?>/assets/img/icon-password.svg" alt="" class="icon" id="icon-senha">
                 <label for="senha">Senha</label>
             </div>
 
             <a href="cadastro.html" id="sem-cadastro">Não tem login? Cadastre-se já!</a>
             <button type="submit" id="enviar">Entrar</button>
         </form>
+
         <div class="grid-imagem">
-            <img src="../../assets/img/images 1.svg" alt="#" id="img-fundo">
+            <img src="<?=URL?>/assets/img/images 1.svg" alt="#" id="img-fundo">
             <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra!</p>
         </div>
     </div>
