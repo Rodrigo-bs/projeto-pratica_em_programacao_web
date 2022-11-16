@@ -9,16 +9,16 @@
 </head>
 <body>
     <div class="container">
-        <form action="cliente/login">
+        <form action="<?=URL?>/cliente/login" method="POST">
             <h1>Login</h1>
             <div class="input-button">
-                <input type="text" id="user" maxlength="50" required>
+                <input type="text" id="user" maxlength="50" name="usuario" required>
                 <img src="<?=URL?>/assets/img/icon-user.svg" alt="" class="icon">
                 <label for="user">Usuário</label>
             </div>
 
             <div class="input-button">
-                <input type="password" id="password" maxlength="32" required>
+                <input type="password" id="password" maxlength="32" name="senha" required>
                 <img src="<?=URL?>/assets/img/icon-password.svg" alt="" class="icon" id="icon-senha">
                 <label for="senha">Senha</label>
             </div>
