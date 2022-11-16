@@ -2,9 +2,10 @@
 
 *{
     box-sizing: border-box;
-}
-body{
     font-family: 'Nunito', 'sans-serif';
+}
+
+body{
     display: grid;
     align-items: center;
     justify-content: center;
@@ -37,9 +38,16 @@ h1::after{
     padding: 30px 80px 30px 50px;
 }
 
-.input-button{
+.input-checkbox{
+    margin: 20px 0px 35px 0px;
+}
+
+.input-checkbox, .input-button{
     position: relative;
-    margin-bottom: 50px;
+}
+
+.input-button + .input-button{
+    margin-top: 50px;
 }
 
 input{
@@ -94,8 +102,8 @@ label{
 #checkbox{
     width: 20px;
     left: 0px;
-    display: inline;
-    margin: 0;
+    display: inline-block;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -103,11 +111,12 @@ label{
     margin: 0px;
     left: 22px;
     padding: 0px;
+    pointer-events: all !important;
 }
 
 input:focus ~ label,
 input:valid ~ label{
-    left: 22px;
+    left: 30px;
 }
 
 /* input:focus ~ img,
@@ -120,6 +129,6 @@ input:focus ~ img,
 input:valid ~ label,
 input:valid ~ img{
     bottom: 22px;
-    transform: scale(.8);
+    transform: scale(1,.9);
     transition: .3s ease;
 }
