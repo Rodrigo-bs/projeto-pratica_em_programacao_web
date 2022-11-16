@@ -18,8 +18,8 @@
         }
 
         public function login() {
-            if (isset($_POST['email']) && isset($_POST['senha']) && $_POST['email'] && $_POST['senha']) {
-                $this->cliente->login($_POST['email'], $_POST['senha']);
+            if (isset($_POST['usuario']) && isset($_POST['senha']) && $_POST['usuario'] && $_POST['senha']) {
+                $this->cliente->validLogin($_POST['usuario'], $_POST['senha']);
             }
 
             $params = [
