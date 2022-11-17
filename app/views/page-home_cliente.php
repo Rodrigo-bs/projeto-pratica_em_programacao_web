@@ -42,7 +42,9 @@
         <h3>Class aptent taciti</h3>
         <span>Class aptent taciti sociosqu ad litora torquent per conubia nostra!</span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur odio vitae neque fermentum fringilla. Morbi tincidunt suscipit quam, et pretium elit congue ac. </p>
-        <button class="Saiba-mais">Saiba mais</button>
+        <button class="saiba-mais">Saiba mais</button>
     </section>
+
+    <section class="section2"></section>
 </body>
 </html>

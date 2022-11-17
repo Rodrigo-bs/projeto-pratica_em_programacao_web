@@ -2,10 +2,10 @@
 
 *{
     margin: 0px;
+    font-family: 'Nunito', 'sans-serif';
 }
 
 body {
-    font-family: 'Nunito', 'sans-serif';
     height: 100vh;
 }
 
@@ -37,9 +37,9 @@ header{
     font-weight: bold;
 }
 
-.menu-nav ul li a:hover{
+/* .menu-nav ul li a:hover{
     background-color: rgba(211, 202, 202, 0.5);
-}
+} */
 
 #login-botao a{
     border: 2px solid #34C76F;
@@ -128,16 +128,42 @@ header{
 .section1 h3{
     position: absolute;
     color: #7DFEB0;
-    top: 12%;
+    top: 14%;
     left: 5%;
 }
 
 .section1 span{
     position: absolute;
     color: #fff;
-    top: 18%;
+    top: 20%;
     left: 5%;
     font-size: 30px;
 }
 
-/* .section  */
+.section1 p{
+    position: absolute;
+    color: #fff;
+    top: 30%;
+    left: 5%;
+}
+
+.section1 button{
+    top: 40%;
+    left: 5%;
+}
+
+.saiba-mais{
+    position: absolute;
+    color: #fff;
+    background-color: #B289E2;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.section2{
+    position: relative;
+    width: 500px;
+    background-color: #34C76F;
+}
