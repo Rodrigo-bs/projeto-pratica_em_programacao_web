@@ -20,8 +20,8 @@
             <h1>Login</h1>
             <div class="input-button">
                 <input type="text" id="user" maxlength="50" name="usuario" required>
-                <img src="<?=URL?>/assets/img/icon-user.svg" alt="" class="icon">
-                <label for="user">Usuário</label>
+                <img src="<?=URL?>/assets/img/icon-email.svg" alt="" class="icon">
+                <label for="user">E-mail</label>
             </div>
 
             <div class="input-button">
