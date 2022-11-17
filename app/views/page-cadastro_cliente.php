@@ -39,7 +39,7 @@
             </div>
 
             <div class="input-checkbox">
-                <label for="checkbox" id="termo">Aceitar termos de serviço</label>
+                <label for="checkbox" id="termo">Aceito todos os termos de serviço.</label>
                 <input type="checkbox" name="termo" id="checkbox" required>
             </div>
 

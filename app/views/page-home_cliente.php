@@ -37,8 +37,8 @@
         </nav>
     </header>
 
-    <section>
-        <img src="<?=URL?>/assets/img/img-fundo-section.svg" alt="">
+    <section class="section1">
+        <img src="<?=URL?>/assets/img/img-section1.svg" alt="" id="img-section1">
     </section>
 </body>
 </html>
