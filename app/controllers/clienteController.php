@@ -41,4 +41,11 @@
             header('Location: ' . URL . '/cliente/login');
             exit;
         }
+
+        public function cadastro() {
+            $params = [];
+
+            $this->loadView('page-cadastro_cliente', $params);
+        }
     }
+

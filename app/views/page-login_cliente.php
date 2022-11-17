@@ -30,7 +30,7 @@
                 <label for="senha">Senha</label>
             </div>
 
-            <a href="cadastro.html" id="sem-cadastro">Não tem login? Cadastre-se já!</a>
+            <a href="<?=URL?>/cliente/cadastro" id="sem-cadastro">Não tem login? Cadastre-se já!</a>
             <button type="submit" id="enviar">Entrar</button>
         </form>
 
