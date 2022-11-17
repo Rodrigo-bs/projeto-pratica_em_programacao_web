@@ -14,6 +14,10 @@
                 ];
             }
 
+            $params = [
+
+            ];
+
             $this->loadView('page-home_cliente', $params);
         }
 
@@ -27,5 +31,14 @@
             ];
 
             $this->loadView('page-login_cliente', $params);
+        }
+
+        public function logout() {
+            unset($_SESSION['token']);
+            unset($_SESSION['cliente_nome']);
+            unset($_SESSION['cliente_id']);
+
+            header('Location: ' . URL . '/cliente/login');
+            exit;
         }
     }

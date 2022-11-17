@@ -1,3 +1,9 @@
+<?php
+    if (isset($_SESSION['token'])) {
+        header('Location: ' . URL . '/');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

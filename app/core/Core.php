@@ -22,7 +22,7 @@
                     $params = $url;
                 }
             } else {
-                $controllerPage = 'loginController';
+                $controllerPage = 'clienteController';
                 $action = 'index';
             }
 
