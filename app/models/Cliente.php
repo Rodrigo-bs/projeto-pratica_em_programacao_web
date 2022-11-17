@@ -5,6 +5,11 @@
             parent::__construct('cliente');
         }
 
+        public function insertNewUser($informacoesDoCliente) {
+            $cliente = $this->insert($informacoesDoCliente);
+            return $cliente;
+        }
+
         public function validLogin($email, $senha) {
             $informacoesDoCliente = [
                 'cliente_email' => $email,

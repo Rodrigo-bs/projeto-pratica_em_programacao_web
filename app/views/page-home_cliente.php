@@ -21,7 +21,7 @@
                 <li><a href="/">Ajuda</a></li>
                 <?php if (!isset($_SESSION['token'])) {?>
                     <li id="login-botao"><a href="<?=URL?>/cliente/login">Login</a></li>
-                    <li id="cadastro-botao"><a href="/">Cadastrar Loja</a></li>
+                    <li id="cadastro-botao"><a href="<?=URL?>/cliente/cadastro">Cadastrar</a></li>
                 <?php } else {?>
                     <li id="perfil">
                         <a href="<?=URL?>/cliente/perfil">

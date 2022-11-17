@@ -43,6 +43,25 @@
         }
 
         public function cadastro() {
+            if (isset($_POST['enviar'])) {
+                $nome = $_POST['user'];
+                $email = $_POST['email'];
+                $senha = $_POST['senha'];
+                $cpf = $_POST['cpf'];
+
+                $this->cliente->insertNewUser([
+                    'cliente_nome' => $nome,
+                    'cliente_cpf' => $cpf,
+                    'cliente_endereco' => '',
+                    'cliente_email' => $email,
+                    'cliente_senha' => md5($senha),
+                    'cliente_foto_de_usuario' => ''
+                ]);
+
+                header('Location: ' . URL . '/cliente/login');
+                exit;
+            }
+
             $params = [];
 
             $this->loadView('page-cadastro_cliente', $params);

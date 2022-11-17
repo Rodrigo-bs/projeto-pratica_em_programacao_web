@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-        <form action="<?=URL?>/cliente/cadastro">
+        <form action="<?=URL?>/cliente/cadastro" method="POST">
             <h1>Cadastro</h1>
             <div class="input-button">
                 <input type="text" name="user" maxlength="50" required>
@@ -27,13 +27,19 @@
             </div>
 
             <div class="input-button">
+                <input type="text" name="cpf" maxlength="32" required>
+                <img src="<?=URL?>/assets/img/icon-password.svg" alt="" class="icon" class="icon-pass">
+                <label for="cpf">CPF</label>
+            </div>
+
+            <div class="input-button">
                 <input type="password" name="senha" maxlength="32" required>
                 <img src="<?=URL?>/assets/img/icon-password.svg" alt="" class="icon" class="icon-pass">
                 <label for="password">Senha</label>
             </div>
 
             <div class="input-button">
-                <input type="password" name="senha" maxlength="32" required>
+                <input type="password" maxlength="32" required>
                 <img src="<?=URL?>/assets/img/icon-password.svg" alt="" class="icon" class="icon-pass">
                 <label for="password" id="confirma-senha">Confirme sua senha</label>
             </div>
@@ -43,7 +49,7 @@
                 <input type="checkbox" name="termo" id="checkbox" required>
             </div>
 
-            <button type="submit" id="enviar">Cadastrar</button>
+            <button type="submit" name="enviar" id="enviar">Cadastrar</button>
         </form>
     </div>
 </body>
