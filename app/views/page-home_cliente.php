@@ -38,13 +38,46 @@
     </header>
 
     <section class="section1">
-        <img src="<?=URL?>/assets/img/img-section1.svg" alt="" id="img-section1">
-        <h3>Class aptent taciti</h3>
-        <span>Class aptent taciti sociosqu ad litora torquent per conubia nostra!</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur odio vitae neque fermentum fringilla. Morbi tincidunt suscipit quam, et pretium elit congue ac. </p>
-        <button class="saiba-mais">Saiba mais</button>
+        <div class="container">
+            <div>
+                <h3>Class aptent taciti</h3>
+                <span>Class aptent taciti sociosqu ad litora torquent per conubia nostra!</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur odio vitae neque fermentum fringilla. Morbi tincidunt suscipit quam, et pretium elit congue ac. </p>
+                <button class="saiba-mais">Saiba mais</button>
+            </div>
+            <div>
+                <img src="<?=URL?>/assets/img/icone-banner.svg" alt="" id="icone-banner">
+            </div>
+        </div>
     </section>
 
-    <section class="section2"></section>
+    <section class="section2">
+        <table>
+            <tr>
+                <th>Grape</th>
+                <th>Outros</th>
+            </tr>
+            <tr>
+                <td>Grátis</td>
+                <td>Pago</td>
+            </tr>
+            <tr>
+                <td>Taxas Negociáveis</td>
+                <td>Altas Taxas</td>
+            </tr>
+            <tr>
+                <td>Lojas ilimitadas</td>
+                <td>N. Limitado</td>
+            </tr>
+            <tr>
+                <td>Maior Visibilidade</td>
+                <td>Baixa Visibilidade</td>
+            </tr>
+            <tr>
+                <td>Consultor Pessoal</td>
+                <td>Atendimento Fraco</td>
+            </tr>
+        </table>
+    </section>
 </body>
 </html>

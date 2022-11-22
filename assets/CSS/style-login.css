@@ -64,6 +64,11 @@ label{
     position: absolute;
     bottom: 3px;
     transition: .3s ease;
+
+}
+
+img[alt="email"]{
+    bottom: 1px;
 }
 
 a{

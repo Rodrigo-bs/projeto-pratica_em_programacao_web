@@ -20,13 +20,13 @@
             <h1>Login</h1>
             <div class="input-button">
                 <input type="text" id="user" maxlength="50" name="usuario" required>
-                <img src="<?=URL?>/assets/img/icon-email.svg" alt="" class="icon">
+                <img src="<?=URL?>/assets/img/icon-email.svg" alt="email" class="icon">
                 <label for="user">E-mail</label>
             </div>
 
             <div class="input-button">
                 <input type="password" id="password" maxlength="32" name="senha" required>
-                <img src="<?=URL?>/assets/img/icon-password.svg" alt="" class="icon" id="icon-senha">
+                <img src="<?=URL?>/assets/img/icon-password.svg" alt="senha" class="icon" id="icon-senha">
                 <label for="senha">Senha</label>
             </div>
 
