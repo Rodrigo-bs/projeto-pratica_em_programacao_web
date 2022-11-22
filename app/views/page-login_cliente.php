@@ -21,7 +21,7 @@
             <div class="input-button">
                 <input type="text" id="user" maxlength="50" name="usuario" required>
                 <img src="<?=URL?>/assets/img/icon-email.svg" alt="" class="icon">
-                <label for="user">E-mail</label>
+                <label for="user">Usuário</label>
             </div>
 
             <div class="input-button">

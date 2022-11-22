@@ -10,14 +10,15 @@
             return $cliente;
         }
 
-        public function validLogin($email, $senha) {
+        public function validLogin($usuario, $senha) {
             $informacoesDoCliente = [
-                'cliente_email' => $email,
+                'cliente_usuario' => $usuario,
                 'cliente_senha' => md5($senha)
             ];
 
             $colunas = ['id_cliente', 'cliente_nome', 'cliente_cpf', 'cliente_foto_de_usuario'];
             $cliente = $this->selectBy($informacoesDoCliente, $colunas);
+
             if ($cliente) {
                 $_SESSION['token'] = md5($cliente[0]['id_cliente'] + $cliente[0]['cliente_nome']);
                 $_SESSION['cliente_id'] = $cliente[0]['cliente_id'];

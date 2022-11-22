@@ -46,6 +46,7 @@
             if (isset($_POST['enviar'])) {
                 $nome = $_POST['user'];
                 $email = $_POST['email'];
+                $usuario = $_POST['usuario'];
                 $senha = $_POST['senha'];
                 $cpf = $_POST['cpf'];
 
@@ -54,6 +55,7 @@
                     'cliente_cpf' => $cpf,
                     'cliente_endereco' => '',
                     'cliente_email' => $email,
+                    'cliente_usuario' => $usuario,
                     'cliente_senha' => md5($senha),
                     'cliente_foto_de_usuario' => ''
                 ]);

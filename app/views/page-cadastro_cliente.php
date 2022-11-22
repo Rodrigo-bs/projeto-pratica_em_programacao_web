@@ -31,6 +31,12 @@
                 <img src="<?=URL?>/assets/img/icon-password.svg" alt="" class="icon" class="icon-pass">
                 <label for="cpf">CPF</label>
             </div>
+            
+            <div class="input-button">
+                <input type="text" name="usuario" maxlength="50" required>
+                <img src="<?=URL?>/assets/img/icon-email.svg" alt="" class="icon">
+                <label for="email">Usuário</label>
+            </div>
 
             <div class="input-button">
                 <input type="password" name="senha" maxlength="32" required>
