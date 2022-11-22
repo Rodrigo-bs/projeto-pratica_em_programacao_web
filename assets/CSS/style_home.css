@@ -139,11 +139,14 @@ header{
 
 .section1 span{
     color: #fff;
+    margin-top: 10px;
     font-size: 30px;
+    line-height: 30px;
 }
 
 .section1 p{
     color: #fff;
+    margin-top: 10px;
 }
 
 .saiba-mais{
@@ -153,9 +156,18 @@ header{
     border-radius: 5px;
     padding: 10px;
     text-transform: uppercase;
+    margin-top: 20px
 }
 
 .section2{
-    position: relative;
+    padding: 90px 0px 120px 0px;
+    background-color: #34C76F;
+}
+
+.section2 .container{
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
+    gap: 50px;
+    margin: 0 auto;
 }

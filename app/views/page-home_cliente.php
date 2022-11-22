@@ -52,32 +52,41 @@
     </section>
 
     <section class="section2">
-        <table>
-            <tr>
-                <th>Grape</th>
-                <th>Outros</th>
-            </tr>
-            <tr>
-                <td>Grátis</td>
-                <td>Pago</td>
-            </tr>
-            <tr>
-                <td>Taxas Negociáveis</td>
-                <td>Altas Taxas</td>
-            </tr>
-            <tr>
-                <td>Lojas ilimitadas</td>
-                <td>N. Limitado</td>
-            </tr>
-            <tr>
-                <td>Maior Visibilidade</td>
-                <td>Baixa Visibilidade</td>
-            </tr>
-            <tr>
-                <td>Consultor Pessoal</td>
-                <td>Atendimento Fraco</td>
-            </tr>
-        </table>
+        <div class="container">
+            <table>
+                <tr>
+                    <th>Grape</th>
+                    <th>Outros</th>
+                </tr>
+                <tr>
+                    <td>Grátis</td>
+                    <td>Pago</td>
+                </tr>
+                <tr>
+                    <td>Taxas Negociáveis</td>
+                    <td>Altas Taxas</td>
+                </tr>
+                <tr>
+                    <td>Lojas ilimitadas</td>
+                    <td>N. Limitado</td>
+                </tr>
+                <tr>
+                    <td>Maior Visibilidade</td>
+                    <td>Baixa Visibilidade</td>
+                </tr>
+                <tr>
+                    <td>Consultor Pessoal</td>
+                    <td>Atendimento Fraco</td>
+                </tr>
+            </table>
+
+        <div>
+            <h3>Class aptent taciti</h3>               
+            <span>Class aptent taciti sociosqu ad litora torquent per conubia nostra!</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur odio vitae neque fermentum fringilla. Morbi tincidunt suscipit quam, et pretium elit congue ac. </p>
+            <button class="saiba-mais">Saiba mais</button>
+        </div>
+        </div>
     </section>
 </body>
 </html>
