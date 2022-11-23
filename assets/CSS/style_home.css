@@ -171,3 +171,16 @@ header{
     gap: 50px;
     margin: 0 auto;
 }
+
+table{
+    border: 2px solid #111;
+    background-color: #fff;
+    border-collapse: collapse;
+    width: 400px;
+    height: 300px;
+}
+
+th, td, tr{
+    border: 2px solid #111;
+    justify-content: center;
+}
