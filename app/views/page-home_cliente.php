@@ -56,36 +56,35 @@
             <table>
                 <tr>
                     <th>Grape</th>
-                    <th>Outros</th>
+                    <th>Outros...</th>
                 </tr>
                 <tr>
-                    <td>Grátis</td>
-                    <td>Pago</td>
+                    <td class="coluna1">Grátis</td>
+                    <td class="coluna2">Pago</td>
                 </tr>
                 <tr>
-                    <td>Taxas Negociáveis</td>
-                    <td>Altas Taxas</td>
+                    <td class="coluna1">Taxas Negociáveis</td>
+                    <td class="coluna2">Altas Taxas</td>
                 </tr>
                 <tr>
-                    <td>Lojas ilimitadas</td>
-                    <td>N. Limitado</td>
+                    <td class="coluna1">Lojas ilimitadas</td>
+                    <td class="coluna2">N. Limitado</td>
                 </tr>
                 <tr>
-                    <td>Maior Visibilidade</td>
-                    <td>Baixa Visibilidade</td>
+                    <td class="coluna1">Maior Visibilidade</td>
+                    <td class="coluna2">Baixa Visibilidade</td>
                 </tr>
                 <tr>
-                    <td>Consultor Pessoal</td>
-                    <td>Atendimento Fraco</td>
+                    <td class="coluna1">Consultor Pessoal</td>
+                    <td class="coluna2">Atendimento Fraco</td>
                 </tr>
             </table>
 
-        <div>
-            <h3>Class aptent taciti</h3>               
-            <span>Class aptent taciti sociosqu ad litora torquent per conubia nostra!</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur odio vitae neque fermentum fringilla. Morbi tincidunt suscipit quam, et pretium elit congue ac. </p>
-            <button class="saiba-mais">Saiba mais</button>
-        </div>
+            <div>
+                <h3>Phasellus ligula nulla, bibendum posuere posuere non.</h3>               
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur odio vitae neque fermentum fringilla. Morbi tincidunt suscipit quam, et pretium elit congue ac.</p>
+                <button class="saiba-mais">Saiba mais</button>
+            </div>
         </div>
     </section>
 </body>

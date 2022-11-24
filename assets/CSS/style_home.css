@@ -172,15 +172,49 @@ header{
     margin: 0 auto;
 }
 
+
 table{
-    border: 2px solid #111;
+    border: 1px solid #111;
     background-color: #fff;
     border-collapse: collapse;
     width: 400px;
     height: 300px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+table th:first-child{
+    font-size: 24px;
+    color: #34C76F;
+}
+
+table th:last-child{
+    font-size: 24px;
+    color: #A7A6A9;
 }
 
 th, td, tr{
-    border: 2px solid #111;
-    justify-content: center;
+    border: 1px solid #DDDDDD;
+    padding: 10px 0px;
+}
+
+.coluna1{
+    background-color: #34C76F33;
+    color: #34C76F;
+    font-size: 18px;
+}
+
+.coluna2{
+    background-color: #E7E7E733;
+    color: #A7A6A9;
+    font-size: 18px;
+}
+
+.container div h3{
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
 }
