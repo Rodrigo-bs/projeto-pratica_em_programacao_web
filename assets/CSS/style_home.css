@@ -37,9 +37,9 @@ header{
     font-weight: bold;
 }
 
-/* .menu-nav ul li a:hover{
+.menu-nav ul li a:hover{
     background-color: rgba(211, 202, 202, 0.5);
-} */
+}
 
 #login-botao a{
     border: 2px solid #34C76F;
@@ -67,7 +67,7 @@ header{
 }
 
 #cadastro-botao a:hover, #login-botao a:hover{
-    transform: scale(1.03);
+    transform: scale(1.06);
 }
 
 #perfil > a {
@@ -213,8 +213,14 @@ th, td, tr{
     font-size: 18px;
 }
 
-.container div h3{
+.section2 .container div span{
     color: #fff;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.section2 .container div p{
+    color: #fff;
+    margin-top: 20px;
 }

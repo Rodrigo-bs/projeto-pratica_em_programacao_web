@@ -81,7 +81,7 @@
             </table>
 
             <div>
-                <h3>Phasellus ligula nulla, bibendum posuere posuere non.</h3>               
+                <span>Phasellus ligula nulla, bibendum posuere posuere non.</span>               
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consectetur odio vitae neque fermentum fringilla. Morbi tincidunt suscipit quam, et pretium elit congue ac.</p>
                 <button class="saiba-mais">Saiba mais</button>
             </div>
