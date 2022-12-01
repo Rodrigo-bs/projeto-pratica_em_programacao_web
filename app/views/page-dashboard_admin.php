@@ -12,18 +12,29 @@
 
 <body>
     <header>
-        <img src="<?= URL ?>/assets/img/logo.svg" alt="Logo da página">
-
-        <nav class="dashboard-nav">
-            <ul>
-                <li><a href="<?= URL ?>/">Home</a></li>
-                <li><a href="/">Lojas</a></li>
-                <li><a href="/">Categorias</a></li>
-                <li><a href="/">Ajuda</a></li>
-                <img src="<?= URL ?>/assets/img/icon_user-circle.svg" alt="Logo da página" id="user-circle">
-            </ul>
-        </nav>
+        <div class="header-container">
+            <img src="<?= URL ?>/assets/img/logo.svg" alt="Logo da página">
+            <nav class="dashboard-nav">
+                <ul>
+                    <li><a href="<?= URL ?>/">Home</a></li>
+                    <li><a href="/">Lojas</a></li>
+                    <li><a href="/">Categorias</a></li>
+                    <li><a href="/">Ajuda</a></li>
+                    <img src="<?= URL ?>/assets/img/icon_user-circle.svg" alt="Logo da página" id="user-circle">
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <section class="form-pesquisa">
+        <div class="container">
+            <form>
+                <input type="text" placeholder="Digite o nome do comerciante...">
+                <button>Pesquisar</button>
+            </form>
+        </div>
+    </section>
+
 
 </body>
 
