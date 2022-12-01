@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?=URL?>/assets/css/style-login.css">
-    <link rel="shortcut icon" href="<?=URL?>/assets/img/grape.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/img/grape.png" type="image/x-icon">
     <title><?=$params['informacoes_da_pagina']['titulo']?></title>
 </head>
 <body>
