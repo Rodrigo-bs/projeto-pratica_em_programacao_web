@@ -8,15 +8,17 @@
         }
 
         public function index() {
+            $params = [];
             if (isset($_SESSION['token'])) {
                 $params['informacoes_de_usuario'] = [
-                    'nome_do_usuario' => 'nome',
+                    'nome_do_usuario' => $_SESSION['cliente_nome'],
                 ];
             }
 
-            $params = [
-
+            $params['informacoes_da_pagina'] = [
+                'titulo' => 'Página de Login'
             ];
+
 
             $this->loadView('page-home_cliente', $params);
         }
@@ -27,7 +29,9 @@
             }
 
             $params = [
-                'informacoes_da_pagina' => 'Página de Login'
+                'informacoes_da_pagina' => [
+                    'titulo' => 'Página de Login'
+                ]
             ];
 
             $this->loadView('page-login_cliente', $params);

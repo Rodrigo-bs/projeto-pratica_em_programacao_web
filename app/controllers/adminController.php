@@ -1,15 +1,25 @@
 <?php
 
     class adminController extends Controller {
-        public $cliente;
+        public $admin;
 
         public function __construct() {
-            // $this->cliente = new Cliente();
+            $this->admin = new Admin();
         }
 
         public function index() {
-            $params = [
+            $params = [];
+            if (!isset($_SESSION['token_admin'])) {
+                header('Location: ' . URL . '/admin/login');
+                exit;
+            }
 
+            $params['informacoes_de_usuario'] = [
+                'nome_do_usuario' => $_SESSION['admin_nome'],
+            ];
+            
+            $params['informacoes_da_pagina'] = [
+                'titulo' => 'Controle ADMIN - ' . $_SESSION['admin_nome']
             ];
 
             $this->loadView('page-dashboard_admin', $params);
@@ -17,50 +27,23 @@
 
         public function login() {
             if (isset($_POST['usuario']) && isset($_POST['senha']) && $_POST['usuario'] && $_POST['senha']) {
-                $this->cliente->validLogin($_POST['usuario'], $_POST['senha']);
+                $this->admin->validLogin($_POST['usuario'], $_POST['senha']);
             }
 
             $params = [
                 'informacoes_da_pagina' => 'Página de Login'
             ];
 
-            $this->loadView('page-login_cliente', $params);
+            $this->loadView('page-login_admin', $params);
         }
 
         public function logout() {
-            unset($_SESSION['token']);
-            unset($_SESSION['cliente_nome']);
-            unset($_SESSION['cliente_id']);
+            unset($_SESSION['token_admin']);
+            unset($_SESSION['admin_nome']);
+            unset($_SESSION['admin_id']);
 
-            header('Location: ' . URL . '/cliente/login');
+            header('Location: ' . URL . '/admin/login');
             exit;
-        }
-
-        public function cadastro() {
-            if (isset($_POST['enviar'])) {
-                $nome = $_POST['user'];
-                $email = $_POST['email'];
-                $usuario = $_POST['usuario'];
-                $senha = $_POST['senha'];
-                $cpf = $_POST['cpf'];
-
-                $this->cliente->insertNewUser([
-                    'cliente_nome' => $nome,
-                    'cliente_cpf' => $cpf,
-                    'cliente_endereco' => '',
-                    'cliente_email' => $email,
-                    'cliente_usuario' => $usuario,
-                    'cliente_senha' => md5($senha),
-                    'cliente_foto_de_usuario' => ''
-                ]);
-
-                header('Location: ' . URL . '/cliente/login');
-                exit;
-            }
-
-            $params = [];
-
-            $this->loadView('page-cadastro_cliente', $params);
         }
     }
 

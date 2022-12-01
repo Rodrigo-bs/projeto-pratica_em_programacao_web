@@ -25,12 +25,15 @@ h1::after{
     width: 33px;
     background-color: #34C76F;
 }
-
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+ 
+.container {
     max-width: 800px;
+    display: grid;
     background-color: white;
+}
+
+.container:not(.admin) {
+    grid-template-columns: 1fr 1fr;
 }
 
 .input-button{
